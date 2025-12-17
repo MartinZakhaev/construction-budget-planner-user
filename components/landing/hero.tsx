@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, BarChart3, CreditCard } from "lucide-react";
+import { ArrowRight, BarChart3, CreditCard, Users, Clock, Truck, TrendingUp } from "lucide-react";
 
 export function Hero() {
     return (
@@ -102,6 +102,50 @@ export function Hero() {
                             <div className="bg-green-500/40 w-1/5 h-[50%] rounded-t" />
                             <div className="bg-green-500/50 w-1/5 h-[70%] rounded-t" />
                             <div className="bg-green-500 w-1/5 h-[85%] rounded-t" />
+                        </div>
+                    </div>
+
+                    {/* New Floating Card 1: Team - Top Left */}
+                    <div className="absolute -top-8 -left-12 bg-background border border-border shadow-xl rounded-xl p-4 flex items-center gap-4 hidden lg:flex animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300">
+                        <div className="bg-blue-100 p-2 rounded-lg text-blue-600">
+                            <Users className="h-6 w-6" />
+                        </div>
+                        <div>
+                            <p className="font-bold">Tim Aktif</p>
+                            <p className="text-sm text-muted-foreground">8 Anggota</p>
+                        </div>
+                    </div>
+
+                    {/* New Floating Card 2: Deadline - Bottom Right */}
+                    <div className="absolute -bottom-8 -right-8 bg-background border border-border shadow-xl rounded-xl p-4 flex items-center gap-4 hidden lg:flex animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-700">
+                        <div className="bg-orange-100 p-2 rounded-lg text-orange-600">
+                            <Clock className="h-6 w-6" />
+                        </div>
+                        <div>
+                            <p className="font-bold">Deadline</p>
+                            <p className="text-sm text-muted-foreground">2 Hari Lagi</p>
+                        </div>
+                    </div>
+
+                    {/* New Floating Card 3: Material - Mid Left */}
+                    <div className="absolute top-1/2 -left-16 bg-background border border-border shadow-xl rounded-xl p-3 flex items-center gap-3 hidden lg:flex animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-500">
+                        <div className="bg-purple-100 p-2 rounded-lg text-purple-600">
+                            <Truck className="h-5 w-5" />
+                        </div>
+                        <div>
+                            <p className="font-semibold text-sm">Material</p>
+                            <Badge variant="secondary" className="text-[10px] h-5">Otw</Badge>
+                        </div>
+                    </div>
+
+                    {/* New Floating Card 4: Progress - Mid Right */}
+                    <div className="absolute bottom-1/3 -right-14 bg-background border border-border shadow-xl rounded-xl p-3 flex items-center gap-3 hidden lg:flex animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-600">
+                        <div className="bg-yellow-100 p-2 rounded-lg text-yellow-600">
+                            <TrendingUp className="h-5 w-5" />
+                        </div>
+                        <div>
+                            <p className="font-semibold text-sm">Progress</p>
+                            <p className="text-xs text-muted-foreground text-green-600">+5% Daily</p>
                         </div>
                     </div>
 
