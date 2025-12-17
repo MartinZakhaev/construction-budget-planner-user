@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarFallback, AvatarImage, AvatarGroup, AvatarGroupCount } from "@/components/ui/avatar";
 import { ArrowRight, BarChart3, CreditCard, Users, Clock, Truck, TrendingUp } from "lucide-react";
 
 export function Hero() {
@@ -111,8 +112,22 @@ export function Hero() {
                             <Users className="h-6 w-6" />
                         </div>
                         <div>
-                            <p className="font-bold">Tim Aktif</p>
-                            <p className="text-sm text-muted-foreground">8 Anggota</p>
+                            <p className="font-bold mb-1">Tim Aktif</p>
+                            <AvatarGroup data-size="sm">
+                                <Avatar size="sm">
+                                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                    <AvatarFallback>CN</AvatarFallback>
+                                </Avatar>
+                                <Avatar size="sm">
+                                    <AvatarImage src="https://github.com/leerob.png" alt="@leerob" />
+                                    <AvatarFallback>LR</AvatarFallback>
+                                </Avatar>
+                                <Avatar size="sm">
+                                    <AvatarImage src="https://github.com/evilrabbit.png" alt="@evilrabbit" />
+                                    <AvatarFallback>ER</AvatarFallback>
+                                </Avatar>
+                                <AvatarGroupCount>+5</AvatarGroupCount>
+                            </AvatarGroup>
                         </div>
                     </div>
 
