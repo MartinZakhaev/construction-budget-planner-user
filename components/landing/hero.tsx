@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage, AvatarGroup, AvatarGroupCount } from "@/components/ui/avatar";
-import { ArrowRight, BarChart3, CreditCard, Users, Clock, Truck, TrendingUp } from "lucide-react";
+import { ArrowRight, BarChart3, CreditCard, Users, Clock, Truck, TrendingUp, ShieldCheck, HardHat } from "lucide-react";
 
 export function Hero() {
     return (
@@ -177,6 +177,28 @@ export function Hero() {
                         </Badge>
                     </div>
 
+
+                    {/* New Floating Card 5: Safety - Top Center */}
+                    <div className="absolute -top-6 left-1/3 bg-background border border-border shadow-xl rounded-xl p-3 flex items-center gap-3 hidden lg:flex animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-400">
+                        <div className="bg-emerald-100 p-2 rounded-lg text-emerald-600">
+                            <ShieldCheck className="h-5 w-5" />
+                        </div>
+                        <div>
+                            <p className="font-semibold text-sm">Safety Score</p>
+                            <p className="text-xs text-muted-foreground">100% (30 Hari)</p>
+                        </div>
+                    </div>
+
+                    {/* New Floating Card 6: Equipment - Bottom Center */}
+                    <div className="absolute -bottom-6 right-1/3 bg-background border border-border shadow-xl rounded-xl p-3 flex items-center gap-3 hidden lg:flex animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-800">
+                        <div className="bg-amber-100 p-2 rounded-lg text-amber-600">
+                            <HardHat className="h-5 w-5" />
+                        </div>
+                        <div>
+                            <p className="font-semibold text-sm">Alat Berat</p>
+                            <p className="text-xs text-muted-foreground">5 Beroperasi</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
