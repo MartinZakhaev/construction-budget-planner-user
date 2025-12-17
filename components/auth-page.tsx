@@ -8,6 +8,7 @@ import {
 	InputGroupInput,
 } from "@/components/ui/input-group";
 import { AtSignIcon, ChevronLeftIcon } from "lucide-react";
+import Link from "next/link";
 import type React from "react";
 import { FloatingPaths } from "@/components/floating-paths";
 
@@ -21,11 +22,11 @@ export function AuthPage() {
 				<div className="z-10 mt-auto">
 					<blockquote className="space-y-2">
 						<p className="text-xl">
-							&ldquo;This Platform has helped me to save time and serve my
-							clients faster than ever before.&rdquo;
+							&ldquo;Sebagai kontraktor, platform ini membuat perencanaan
+							anggaran proyek saya jauh lebih cepat dan rapi.&rdquo;
 						</p>
 						<footer className="font-mono font-semibold text-sm">
-							~ Ali Hassan
+							~ Jibril Adam
 						</footer>
 					</blockquote>
 				</div>
@@ -44,45 +45,45 @@ export function AuthPage() {
 					<div className="-translate-y-87.5 absolute top-0 right-0 h-320 w-60 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,--theme(--color-foreground/.04)_0,--theme(--color-foreground/.01)_80%,transparent_100%)]" />
 				</div>
 				<Button asChild className="absolute top-7 left-5" variant="ghost">
-					<a href="#">
+					<Link href="/">
 						<ChevronLeftIcon />
-						Home
-					</a>
+						Beranda
+					</Link>
 				</Button>
 				<div className="mx-auto space-y-4 sm:w-sm">
 					<Logo className="h-5 lg:hidden" />
 					<div className="flex flex-col space-y-1">
 						<h1 className="font-bold text-2xl tracking-wide">
-							Sign In or Join Now!
+							Masuk atau Daftar Sekarang!
 						</h1>
 						<p className="text-base text-muted-foreground">
-							login or create your efferd account.
+							Mulai kelola proyek dengan masuk atau membuat akun Planin Anda.
 						</p>
 					</div>
 					<div className="space-y-2">
 						<Button className="w-full" size="lg" type="button">
 							<GoogleIcon />
-							Continue with Google
+							Lanjutkan dengan Google
 						</Button>
 						<Button className="w-full" size="lg" type="button">
 							<AppleIcon />
-							Continue with Apple
+							Lanjutkan dengan Apple
 						</Button>
 						<Button className="w-full" size="lg" type="button">
 							<GithubIcon />
-							Continue with GitHub
+							Lanjutkan dengan GitHub
 						</Button>
 					</div>
 
 					<div className="flex w-full items-center justify-center">
 						<div className="h-px w-full bg-border" />
-						<span className="px-2 text-muted-foreground text-xs">OR</span>
+						<span className="px-2 text-muted-foreground text-xs">ATAU</span>
 						<div className="h-px w-full bg-border" />
 					</div>
 
 					<form className="space-y-2">
 						<p className="text-start text-muted-foreground text-xs">
-							Enter your email address to sign in or create an account
+							Masukkan alamat email Anda untuk masuk atau membuat akun baru.
 						</p>
 						<InputGroup>
 							<InputGroupInput
@@ -95,23 +96,23 @@ export function AuthPage() {
 						</InputGroup>
 
 						<Button className="w-full" type="button">
-							Continue With Email
+							Lanjutkan dengan Email
 						</Button>
 					</form>
 					<p className="mt-8 text-muted-foreground text-sm">
-						By clicking continue, you agree to our{" "}
+						Dengan melanjutkan, Anda menyetujui{" "}
 						<a
 							className="underline underline-offset-4 hover:text-primary"
 							href="#"
 						>
-							Terms of Service
+							Syarat Layanan
 						</a>{" "}
 						and{" "}
 						<a
 							className="underline underline-offset-4 hover:text-primary"
 							href="#"
 						>
-							Privacy Policy
+							Kebijakan Privasi
 						</a>
 						.
 					</p>
